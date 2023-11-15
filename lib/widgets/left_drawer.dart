@@ -66,13 +66,13 @@ class LeftDrawer extends StatelessWidget {
             leading: const Icon(Icons.shopping_basket),
             title: const Text('Daftar Produk'),
             onTap: () {
-                // Route menu ke halaman produk
-                Navigator.push(
+              // Route menu ke halaman produk
+              Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const ProductPage()),
-                );
+              );
             },
-        ),
+          ),
         ],
       ),
     );

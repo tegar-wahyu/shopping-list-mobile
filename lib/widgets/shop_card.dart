@@ -39,14 +39,11 @@ class ShopCard extends StatelessWidget {
                 builder: (context) => const ShopFormPage(),
               ),
             );
-          }
-          else if (item.name == "Lihat Produk") {
+          } else if (item.name == "Lihat Produk") {
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => const ProductPage()));
-          }
-          else if (item.name == "Logout") {
+          } else if (item.name == "Logout") {
             final response = await request.logout(
-                // TODO: Ganti URL dan jangan lupa tambahkan trailing slash (/) di akhir URL!
                 "http://127.001:8000/auth/logout/");
             String message = response["message"];
             if (response['status']) {
@@ -64,7 +61,6 @@ class ShopCard extends StatelessWidget {
               ));
             }
           }
-
         },
         child: Container(
           // Container untuk menyimpan Icon dan Text
