@@ -35,3 +35,4 @@ jobs:
         
       - name: Analyze
         run: flutter analyze
+        
